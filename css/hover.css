@@ -1,0 +1,50 @@
+@media only screen and (max-width: 600px) {
+    /* imagen min-mobil */
+    *[class].h420{ height:420px !important; }
+    *[class].w550{ width:550px !important; }
+    /* caja */
+    *[class].h180{ height:180px !important; }
+    *[class].w200{ width:200px !important; }
+    /* texto */
+    *[class].t14{ font-size:14px !important; }
+    *[class].p10{ padding:10px !important; }
+}
+
+.imagen:hover .caja {
+  transform: rotate(360deg);
+  opacity: 1;
+  position: relative;
+}
+
+.imagen:hover {
+  transform: scale(1.5);
+  border: 9px solid skyblue;
+  margin-top: 0;
+}
+
+.imagen {
+  width: 1300px;
+  height: 600px;
+  /*position: relative;*/
+  background-image: url("../img/IMG_20170623_101902348.jpg");
+  background-size: cover;
+  display: block;
+  margin: 0;
+}
+
+.caja {
+  background: #ffffff;
+  border: 2px solid;
+  width: 257px;
+  height: 257px;
+  transition-duration: 1s;
+  opacity: 0;
+  top: 250px;
+  left: 250px;
+  /*margin: 150px 160px 0 275px;*/
+}
+
+.texto {
+  font-size: 16px;
+  padding: 22px 37px 62px 23px;
+}
